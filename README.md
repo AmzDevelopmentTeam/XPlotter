@@ -1,19 +1,19 @@
 # XPlotter
 
-CPU plotter for BURST - creates optimized PoC2 plot files
+CPU plotter for AMZ - creates optimized PoC2 plot files
 
 ## Usage
 
 ```
 @setlocal
 @cd /d %~dp0 
-XPlotter.exe -id 17559140197979902351 -sn 0 -n 20000 -t 2 -path F:\burst\plots -mem 5G
+XPlotter.exe -id 17559140197979902351 -sn 0 -n 20000 -t 2 -path F:\plots -mem 5G
 ```
 
 ## Usage Breakdown
 
 ```
--id: Your BURST address numeric ID.
+-id: Your AMZ address numeric ID.
 -sn: Nonce to Start at.
 -n: Number of Nonces to Plot.
 -t: Number of threads on your CPU you want to use.
@@ -40,5 +40,5 @@ To resume plotting you need to match the config to the plotfile you are trying t
 17559140197979902351_20001_20000_20000
 ```
 ```
-XPlotter_avx.exe -id 17559140197979902351 -sn 20001 -n 20000 -t 6 -path F:\burst\plots -mem 5G
+XPlotter_avx.exe -id 17559140197979902351 -sn 20001 -n 20000 -t 6 -path F:\plots -mem 5G
 ```
